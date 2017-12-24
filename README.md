@@ -59,7 +59,7 @@ class Channel:
             v: The "v" parameter derived from the hashed and signed message (ethereum.utils.ecsign)
             r: The "r" parameter derived from the hashed and signed message (ethereum.utils.ecsign)
             s: The "s" parameter derived from the hashed and signed message (ethereum.utils.ecsign)
-            value: the 
+            value: the value used in the hashed message that was signed
 
         Returns:
             Address of the message signer as a hexidecimal string
