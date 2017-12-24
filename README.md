@@ -10,7 +10,7 @@ To quickly sum up, Bob wants to pay Alice a small amount of cryptocurrency every
 
 (For simplicities sake I have left out the time-limit bit from Matthew’s tutorial as I was mostly interested in the message signing)
 
-Here is Matthew’s state-channel contract recreated in Python. For a real decentralized application, this should live on-chain but I was too lazy to deploy one and interact with it so I just made it in Python for testing instead.
+Here is Matthew’s state-channel contract recreated in Python. Again there is no real purpose to building a state channel in Python as the value of it comes from its decentralization and transparency when deployed to the blockchain. This was built for testing, debugging, and learning purposes.
 
 ```python
 from ethereum.utils import privtoaddr, ecrecover_to_pub, ecsign
