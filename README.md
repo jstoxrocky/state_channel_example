@@ -112,7 +112,7 @@ addr = privtoaddr(priv)
 pub = to_checksum_address(addr)
 bob = {'pub':pub, 'priv':priv}
 ```
-First Bob created the state channel contract and deposits 1 ETH.
+First Bob creates the state channel contract and locks up 1 ETH (Assume the constructor is a solidity `payable` method).
 
 ```python
 # Bob opens the state channel and (pseudo-code) deposits 1 ETH
