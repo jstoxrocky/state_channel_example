@@ -143,7 +143,9 @@ When Alice receives this message, she can double check that she will be able to 
 # Alice can verify (offchain) that to make sure bob isn't sending her junk:
 bobs_promised_value = '0.1'
 hash_contains_correct_value = keccak(str(channel.__hash__()) + bobs_promised_value) == from_bob['h']
+# hash_contains_correct_value resloves to True
 signer_is_bob = ecrecover(**from_bob) == bob['pub']
+# signer_is_bob resloves to True
 ```
 If this checks out Alice can save this data somewhere safe and continue working for Bob. When she decides to cash out she creates her own message hash (with the promised value from Bob's most recent data sent to her).
 ```python
