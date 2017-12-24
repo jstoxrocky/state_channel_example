@@ -95,7 +95,7 @@ class Channel:
             print('Success')
 
 ```
-### How Alice and Bob can use this contract
+### How Alice and Bob can use a state channel between themselves
 
 (1) Let’s create two wallets. One for Alice and one for Bob.
 ```python
