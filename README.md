@@ -97,20 +97,19 @@ class Channel:
 ### How Alice and Bob can use this contract
 
 (1) Let’s create two wallets. One for Alice and one for Bob.
-
-```python
-# Create Bob's account
-priv = keccak('Bob')
-addr = privtoaddr(priv)
-pub = to_checksum_address(addr)
-bob = {'pub':pub, 'priv':priv}
-```
 ```python
 # Create Alice's account
 priv = keccak('Alice')
 addr = privtoaddr(priv)
 pub = to_checksum_address(addr)
 alice = {'pub':pub, 'priv':priv}
+```
+```python
+# Create Bob's account
+priv = keccak('Bob')
+addr = privtoaddr(priv)
+pub = to_checksum_address(addr)
+bob = {'pub':pub, 'priv':priv}
 ```
 First Bob created the state channel contract and deposits 1 ETH.
 
