@@ -176,6 +176,6 @@ channel.close_channel(
     bobs_promised_value, 
 )
 ```
-When she does this, her total payments are sent to her, all remaining funds in the contract are sent back to Bob, and the channel is closed.
+When she does this, her total payments are sent to her, all remaining funds in the contract are sent back to Bob, and the channel is closed. 
 
-And that's it! For more information on edge cases in which Bob and Alice actively try to cheat each other and how this contract prevents it, see Matthew's tutorial above. Thanks for reading!
+And that's it! With this contract, two individuals could have any number of transactions between themselves with only two gas-consuming transaction to the network! For more information on edge cases in which Bob and Alice actively try to cheat each other and how this contract prevents it, see Matthew's tutorial above. Thanks for reading!
