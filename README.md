@@ -13,9 +13,10 @@ To quickly sum up, Bob wants to pay Alice a small amount of cryptocurrency every
 Here is Matthew’s state-channel contract recreated in Python. Again there is no real purpose to building a state channel in Python as the value of it comes from its decentralization and transparency when deployed to the blockchain. This was built for testing, debugging, and learning purposes.
 
 ```python
+# https://github.com/ethereum/pyethereum
 from ethereum.utils import privtoaddr, ecrecover_to_pub, ecsign
+# https://github.com/ethereum/eth-utils
 from eth_utils import keccak, encode_hex, decode_hex, to_checksum_address
-from pprint import pprint
 ```
 
 ```python
