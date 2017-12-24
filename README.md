@@ -147,7 +147,7 @@ hash_contains_correct_value = keccak(str(channel.__hash__()) + bobs_promised_val
 signer_is_bob = ecrecover(**from_bob) == bob['pub']
 # signer_is_bob resloves to True
 ```
-If this checks out Alice can save this data somewhere safe and continue working for Bob. When she decides to cash out she creates her own message hash (with the promised value from Bob's most recent data sent to her).
+If this checks out, Alice can save this data somewhere safe and continue working for Bob. When she decides to cash out she creates her own message hash (with the promised value from Bob's most recent data sent to her).
 ```python
 # What Alice needs to compute
 bobs_promised_value = '0.1'
